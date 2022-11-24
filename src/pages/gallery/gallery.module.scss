@@ -1,0 +1,11 @@
+@import '../../scss/style.module.scss';
+
+.gallery_page_wrap {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+
+    .gallery {
+        padding: 30px 0 0 0;
+    }
+}

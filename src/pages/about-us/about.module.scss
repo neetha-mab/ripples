@@ -1,0 +1,64 @@
+@import '../../scss/style.module.scss';
+
+.about_page {
+    float: left;
+    width: 100%;
+    padding: 70px 0 0 0;
+
+    h2, h3 {
+        color: $dark;
+        font-family: $primary-font;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.25em;
+        letter-spacing: -0.77px;
+        position: relative;
+
+        @include media(767px){
+            font-size: 25px;
+        }
+
+        &::before {
+            width: 58px;
+            height: 4px;
+            background-color: $blue;
+            display: block;
+            content: "";
+            margin-bottom: 40px;
+        }
+    }
+
+    p {
+        color: $dark;
+        font-family: $gilroy-light;
+        font-size: 20px;
+        line-height: 35px;
+        padding-top: 25px;
+    }
+
+    .about_blocks {
+        margin-bottom: 70px;
+    }
+
+    h4 {
+        color: $dark;
+        font-family: $primary-font;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.25em;
+        letter-spacing: -0.77px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .image_block {
+        width: 100%;
+        display: flex;
+        margin-top: 30px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

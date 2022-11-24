@@ -1,0 +1,214 @@
+@import '../../scss/style.module.scss';
+
+.multi_day_tour {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+
+    .button_select {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 20px;
+        
+        @include media(767px){
+            flex-wrap: wrap;
+        }
+
+        .button_group {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: calc(100% - 168px);
+
+            @include media(767px){
+                width: 100%;
+            }
+
+            button {
+                color: $dark;
+                font-family: $primary-font;
+                font-size: 20px;
+                letter-spacing: -0.38px;
+                line-height: 26px;
+                -webkit-box-shadow: 0 2px 4px rgb(25 25 25 / 3%);
+                box-shadow: 0 2px 4px rgb(25 25 25 / 3%);
+                border: 1px solid $gray;
+                padding: 18px 23px 18px 23px;
+                cursor: pointer;
+                background: none;
+                margin-right: 20px;
+                margin-bottom: 15px;
+
+                @include media(575px){
+                    width: calc(50% - 20px);
+                    margin-right: 0;
+                }
+
+                @include media(480px){
+                    width: 100%;
+                }
+            }
+        }
+
+        select {
+            color: $dark;
+            font-family: $primary-font;
+            font-size: 20px;
+            letter-spacing: -0.38px;
+            line-height: 26px;
+            -webkit-box-shadow: 0 2px 4px rgb(25 25 25 / 3%);
+            box-shadow: 0 2px 4px rgb(25 25 25 / 3%);
+            border: 1px solid $gray;
+            padding: 18px 23px 18px 23px;
+            cursor: pointer;
+            background: none; 
+        }
+
+        .select_dropdown {
+            position: relative;
+            margin: 0 0px 0 15px;
+    
+            @include media(992px){
+                width: 168px;
+            }
+
+            @include media(480px){
+                width: 100%;
+            }
+    
+            span {
+                font-family: $primary-font;
+                color: $dark;
+                font-weight: 500;
+                transition: 0.4s;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                font-size: 20px;
+                letter-spacing: -0.38px;
+                line-height: 26px;
+                -webkit-box-shadow: 0 2px 4px rgb(25 25 25 / 3%);
+                box-shadow: 0 2px 4px rgb(25 25 25 / 3%);
+                border: 1px solid $gray;
+                padding: 18px 23px 18px 23px;
+                cursor: pointer;
+
+                @include media(480px){
+                    justify-content: space-between;
+                }
+    
+                svg {
+                    font-size: 31px;
+                }
+            }
+    
+            .submenu {
+                position: absolute;
+                left: 0;
+                z-index: 20;
+                width: max-content;
+                padding: 24px 0 0;
+                box-shadow: 0 12px 42px rgb(25 25 25 / 8%);
+                display: none;
+                margin: 0;
+                min-width: 120px;
+    
+                @include media(992px) {
+                    padding-top: 10px;
+                    position: relative;
+                }
+                
+                li {
+                    margin: 0;
+                    padding: 11px 14px;
+                    background: $white;
+                    position: relative;
+                    list-style: none;
+                    color: $dark;
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: -0.31px;
+                    cursor: pointer;
+    
+                    &:first-child {
+                        border-top: 2px solid $blue;
+    
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            border-left: 6px solid transparent;
+                            border-right: 6px solid transparent;
+                            border-bottom: 6px solid $blue;
+                            width: 0;
+                            height: 0;
+                            top: -7px;
+                            left: 31px;
+                        }
+                    }
+                }
+            }
+    
+            &.normal {
+                transition-duration: 0.5s;
+    
+                svg {
+                    -ms-transform: rotate(0deg); /* IE 9 */
+                    transform: rotate(0deg);
+                    transition-duration: 0.5s;
+                    color: $blue;
+                }
+            }
+    
+            &.active {
+                transition-duration: 0.5s;
+    
+                svg {
+                    -ms-transform: rotate(180deg); /* IE 9 */
+                    transform: rotate(180deg);
+                    transition-duration: 0.5s;
+                    color: $blue;
+                }
+    
+                .submenu {
+                    display: block;
+                }
+            }
+    
+            &.price_drop {
+                @include media(1360px){
+                    .submenu {
+                        right: 0;
+                        left: auto;
+    
+                        li {
+                            &:first-child {
+                                &::before {
+                                    left: auto;
+                                    right: 41px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .primary_header {
+        margin-top: 30px;
+    }
+
+    .tours_tiles {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,108 @@
+@import '../../scss/style.module.scss';
+
+.tile_block {
+    width: 33.33%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+
+    @include media(992px){
+        width: 50%;
+    }
+
+    @include media(767px){
+        width: 100%;
+    }
+
+    a {
+        width: 100%;
+        float: left;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+
+            @include media(480px){
+                height: auto;
+            }
+        }
+
+        h4 {
+            color: $dark;
+            font-family: $gilroy-regular;
+            font-size: 24px;
+            letter-spacing: -0.46px;
+            line-height: 36px;
+            margin-bottom: 38px;
+            min-height: 74px;
+
+            @include media(1024px){
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 27px;
+                min-height: 0;
+            }
+        }
+    }
+
+    h3 {
+        float: left;
+        width: 100%;
+        color: $dark;
+        font-family: $gilroy-regular;
+        font-size: 16px;
+        letter-spacing: -0.31px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        position: relative;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+
+        &::before {
+            content: "";
+            display: table;
+            background-color: $blue;
+            position: absolute;
+            top: 27.5px;
+            width: 38px;
+            height: 3px;
+            left: 0;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        float: left;
+        width: 100%;
+
+        @include media(1024px){
+            display: inline-block;
+        }
+
+        @include media(992px){
+           display: flex;
+        }
+
+        @include media(767px){
+            display: inline-block;
+        }
+
+        li {
+            list-style: none;
+            color: $dark;
+            font-family: $gilroy-regular;
+            font-size: 16px;
+            letter-spacing: -0.31px;
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                font-size: 23px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

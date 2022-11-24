@@ -1,0 +1,70 @@
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./mixins.scss";
+
+//---------------------------------------------
+// Common styles placed here
+//---------------------------------------------
+
+.container {
+  @include marginPadding(0 auto, 0 30px);
+  max-width: 1320px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  
+  // @media (min-width:768px){
+  //   max-width: 720px;
+  // }
+
+  // @media (min-width:992px){
+  //   max-width: 960px;
+  // }
+
+  // @media (min-width:1200px){
+  //   max-width: 1140px;
+  // }
+
+  // @media (min-width:1400px){
+  //   max-width: 1320px;
+  // } 
+}
+
+.block_element {
+  @include flex(flex-start,flex-start);
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right:-15px;
+}
+
+.primary_header {
+    color: $dark;
+    font-family: $primary-font;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25em;
+    letter-spacing: -0.77px;
+    position: relative;
+
+    @include media(767px){
+      font-size: 25px;
+    }
+
+    &::before {
+      width: 58px;
+      height: 4px;
+      background-color: $blue;
+      display: block;
+      content: "";
+      margin-bottom: 40px;
+  }
+}

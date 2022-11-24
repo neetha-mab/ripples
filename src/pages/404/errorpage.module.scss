@@ -1,0 +1,48 @@
+@import '../../scss/style.module.scss';
+
+.error_page {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 50vh;
+
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    svg {
+        font-size: 50px;
+    }
+
+    h1 {
+        font-family: $primary-font;
+        color: $primary-color;
+        font-size: 65px;
+    }
+
+    h2 {
+        font-family: $primary-font;
+        color: $black;
+        font-size: 25px;
+        font-weight: $regular;
+    }
+
+    p {
+        font-family: $primary-font;
+        color: $black;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    button {
+        background: none;
+        border: none;
+        font-family: $primary-font;
+        color: $primary-color;
+        font-weight: $bold;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+}

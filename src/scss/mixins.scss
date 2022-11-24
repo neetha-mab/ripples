@@ -1,0 +1,114 @@
+// margin/padding
+// ----------------------------------------------
+@mixin marginPadding($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+// flexbox
+// ----------------------------------------------
+@mixin flex($content, $align) {
+  display: flex;
+  justify-content: $content;
+  align-items: $align;
+}
+
+// box shadow
+// ----------------------------------------------
+
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+  box-shadow: $x-axis $y-axis $blur $color;
+}
+
+// font family groups
+// ----------------------------------------------
+
+@mixin primary-font($font) {
+  font-family: $font;
+}
+
+// font size converter
+// ----------------------------------------------
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// pseudo elements
+//------------------------------------------------
+@mixin pseudoRight($width, $bg, $height) {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: $width;
+  background: $bg;
+  height: $height;
+}
+
+@mixin pseudoLeft($width, $bg, $height) {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: $width;
+  background: $bg;
+  height: $height;
+}
+
+// Full width
+//------------------------------------------------
+
+@mixin fullWidth() {
+  width: 100%;
+  float: left;
+}
+
+// transition
+// ----------------------------------------------
+
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+@mixin transition-property($property...) {
+  -moz-transition-property: $property;
+  -o-transition-property: $property;
+  -webkit-transition-property: $property;
+  transition-property: $property;
+}
+@mixin transition-duration($duration...) {
+  -moz-transition-property: $duration;
+  -o-transition-property: $duration;
+  -webkit-transition-property: $duration;
+  transition-property: $duration;
+}
+@mixin transition-timing-function($timing...) {
+  -moz-transition-timing-function: $timing;
+  -o-transition-timing-function: $timing;
+  -webkit-transition-timing-function: $timing;
+  transition-timing-function: $timing;
+}
+@mixin transition-delay($delay...) {
+  -moz-transition-delay: $delay;
+  -o-transition-delay: $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay: $delay;
+}
+
+// media query
+// ----------------------------------------------
+
+@mixin media($media) {
+  @media only screen and (max-width: $media) {
+    @content;
+  }
+}

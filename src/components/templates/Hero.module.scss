@@ -1,0 +1,97 @@
+@import '../../scss/style.module.scss';
+
+.hero {
+    position: relative;
+    float: left;
+    width: 100%;
+
+    & > img {
+        object-fit: cover;
+        float: left;
+        width: 100%;
+
+        @include media(480px){
+            height: 500px;
+        }
+    }
+
+    .hero_content {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        h1 {
+            color: $white;
+            font-family: $secondary-font;
+            font-size: 150px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 160px;
+            letter-spacing: -0.1px;
+            text-shadow: 2px 2px 34px rgb(25 25 25 / 29%);
+
+            @include media(1100px){
+                font-size: 90px;
+                line-height: 95px;
+            }
+
+            @include media(480px){
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+
+        ul {
+            border-bottom: 1px solid $white;
+            display: inline-block;
+            overflow: hidden;
+            margin-top: 50px;
+
+            li {
+                display: inline-block;
+                margin-right: 25px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    opacity: 0.84;
+                    color: $white;
+                    font-family: $primary-font;
+                    font-size: 26px;
+                    letter-spacing: -0.5px;
+                    line-height: 17px;
+                    padding-bottom: 10px;
+                    display: block;
+                    position: relative;
+
+                    @include media(480px){
+                        font-size: 15px;
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 4px;
+                        background: $blue;
+                        position: absolute;
+                        left: 0;
+                        bottom: -10px;
+                        transition-duration: 0.5s;
+                    }
+
+                    &:hover {
+                        &::before {
+                            bottom: 0;
+                            transition-duration: 0.5s;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

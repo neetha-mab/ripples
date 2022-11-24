@@ -1,0 +1,135 @@
+@import '../../scss/style.module.scss';
+
+.tour_block {
+    padding: 100px 0 40px 0;
+    float: left;
+    width: 100%;
+
+    .two_blocks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .fifty_percent {
+        width: 50%;
+        padding: 0 15px;
+
+        @include media(767px){
+            width: 100%;
+        }
+
+        p {
+            color: $dark;
+            font-family: $gilroy-regular;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: -0.38px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.black_box_sec {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 100px 0px 100px 0px;
+    position: relative;
+    background: $dark url('/images/background-repeat-1.svg') repeat;
+    float: left;
+    width: 100%;
+
+    @include media(992px){
+        padding-bottom: 70px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .black_box_divisions {
+        width: 33.33%;
+        padding: 0 15px;
+
+        @include media(992px){
+            width: 50%;
+            margin-bottom: 30px;
+        }
+
+        @include media(767px){
+            width: 100%;
+        }
+
+        h4 {
+            color: $white;
+            font-family: $primary-font;
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: -0.48px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            li {
+                list-style: none;
+                font-family: $gilroy-regular;
+                color: $white;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: -0.35px;
+                padding: 10px 0;
+                background: url('/images/tick.svg') left top 16px no-repeat;
+                background-size: 14px 14px;
+                padding-left: 28px;
+            }
+
+            &.without_head {
+                margin-top: 53px;
+
+                @include media(767px){
+                    margin-top: -29px;
+                }
+            }
+
+            &.not_included {
+                li {
+                    background: url('/images/hifon.svg') left top 22px no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.practical_information {
+    padding: 100px 0 0 0;
+    float: left;
+    width: 100%;
+
+    .third_wrap {
+        width: 100%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.you_might_like {
+    float: left;
+    width: 100%;
+    padding: 100px 0;
+
+    .tours_tiles {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 60px;
+    }
+}

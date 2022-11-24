@@ -1,0 +1,22 @@
+@import '../../scss/style.module.scss';
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+    a {
+        position: relative;
+        padding: 10px;
+        font-family: $primary-font;
+        font-size: 20px;
+        color: $dark;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+
+        &.active {
+            border-color: $blue;
+        }
+    }
+}

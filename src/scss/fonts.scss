@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url('/fonts/Gilroy-Bold.otf')
+      format("otf"),
+    url('/fonts/Gilroy-Bold.ttf')
+      format("ttf"),
+    url('/fonts/Gilroy-Bold.woff2')
+      format("woff2"),
+    url('/fonts/Gilroy-Bold.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url('/fonts/Gilroy-Medium.otf')
+      format("otf"),
+    url('/fonts/Gilroy-Medium.ttf')
+      format("ttf"),
+    url('/fonts/Gilroy-Medium.woff2')
+      format("woff2"),
+    url('/fonts/Gilroy-Medium.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Light";
+  src: url('/fonts/Gilroy-Light.otf')
+      format("otf"),
+    url('/fonts/Gilroy-Light.ttf')
+      format("ttf"),
+    url('/fonts/Gilroy-Light.woff2')
+      format("woff2"),
+    url('/fonts/Gilroy-Light.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url('/fonts/Gilroy-Regular.otf')
+      format("otf"),
+    url('/fonts/Gilroy-Regular.ttf')
+      format("ttf"),
+    url('/fonts/Gilroy-Regular.woff2')
+      format("woff2"),
+    url('/fonts/Gilroy-Regular.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Semibold";
+  src: url('/fonts/Gilroy-Semibold.otf')
+      format("otf"),
+    url('/fonts/Gilroy-Semibold.ttf')
+      format("ttf"),
+    url('/fonts/Gilroy-Semibold.woff2')
+      format("woff2"),
+    url('/fonts/Gilroy-Semibold.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tungsten Light";
+  src: url('/fonts/Tungsten-Light.otf')
+      format("otf"),
+    url('/fonts/Tungsten-Light.ttf')
+      format("ttf"),
+    url('/fonts/Tungsten-Light.woff2')
+      format("woff2"),
+    url('/fonts/Tungsten-Light.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tungsten Medium";
+  src: url('/fonts/Tungsten-Medium.otf')
+      format("otf"),
+    url('/fonts/Tungsten-Medium.ttf')
+      format("ttf"),
+    url('/fonts/Tungsten-Medium.woff2')
+      format("woff2"),
+    url('/fonts/Tungsten-Medium.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tungsten Bold";
+  src: url('/fonts/Tungsten-Bold.otf')
+      format("otf"),
+    url('/fonts/Tungsten-Bold.ttf')
+      format("ttf"),
+    url('/fonts/Tungsten-Bold.woff2')
+      format("woff2"),
+    url('/fonts/Tungsten-Bold.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tungsten Semibold";
+  src: url('/fonts/Tungsten-Semibold.otf')
+      format("otf"),
+    url('/fonts/Tungsten-Semibold.ttf')
+      format("ttf"),
+    url('/fonts/Tungsten-Semibold.woff2')
+      format("woff2"),
+    url('/fonts/Tungsten-Semibold.woff')
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$primary-font: "Gilroy Medium";
+$secondary-font: "Tungsten Semibold";
+$gilroy-bold: "Gilroy Bold";
+$gilroy-regular: "Gilroy Regular";
+$gilroy-light: "Gilroy Light";
+
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
