@@ -15,7 +15,7 @@ const ErrorPage = () => {
                     <ImSad />
                     <h1>404</h1>
                     <h2>Page Not Found</h2>
-                    <p>The Page you are looking for doesn't exist or another error occurred. <button type="button" onClick={() => goBack()}>Go back</button></p>
+                    <p>The Page you are looking for doesn&apos;t exist or another error occurred. <button type="button" onClick={() => goBack()}>Go back</button></p>
                 </div>
             </section>
         </Layout>
