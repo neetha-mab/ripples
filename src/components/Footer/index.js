@@ -14,11 +14,11 @@ const Footer = () => {
         <div className={styles.first_col_wrapper}>
           <div className={styles.logo_menu}>
             <div className={styles.logo_wrapper}>
-              <Logo width={303} height={49} />
+              <Logo width={303} height={72} />
             </div>
             <div className={styles.footer_menu}>
               <ul>
-                <li><Link href={'/'}>About Arctic Adventure</Link></li>
+                <li><Link href={'/'}>About Ripples Adventure</Link></li>
                 <li><Link href={'/'}>Sitemap</Link></li>
                 <li><Link href={'/'}>Sustainability</Link></li>
                 <li><Link href={'/'}>Terms and Conditions</Link></li>
@@ -49,10 +49,10 @@ const Footer = () => {
       <div className={styles.foot_links}>
           <div className={styles.container}>
             <ul>
-              <li>aatour@arctic-adventure.dk</li>
-              <li>+45 33253221</li>
-              <li>CVR-nr: 26858909</li>
-              <li>Nordre Jernbanevej 37, 1st, 3400, Hillerød, Denmark</li>
+              <li> ripplesholidays@gmail.com</li>
+              <li>+91 9847300034</li>
+              <li>+91 7736434405</li>
+              <li>Ripples Holidays, Neduvilamparambil, Karithala Lane, Manorama Jn,Ernakulam – 682016 Kerala – India</li>
             </ul>
             <Link href={'#'}><AiFillLock /> Agency Login</Link>
           </div>

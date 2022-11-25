@@ -6,47 +6,47 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import styles from './gallery.module.scss';
 const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      src: "/images/destinations_cancun.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+      src: "/images/destinations_dominican_republic.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      src: "/images/destinations_florida.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+      src: "/images/destinations_hawaii.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+      src: "/images/destinations_nyc.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      src: "/images/destinations_riviera_maya.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      src: "/images/destinations_st_lucia.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+      src: "/images/destinations_vegas.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+      src: "/images/destinations_hawaii.jpg",
       width: 4,
       height: 3
     }

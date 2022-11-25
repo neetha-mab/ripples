@@ -22,9 +22,9 @@ const TourDetails = () => {
                         <p>In this 5-day tour, you have enough time to join our optional activities and to explore the settlement on your own. Hotel and flight tickets are included to save you from the frustrating process of booking tickets.</p>
                     </div>
                     <div className={styles.fifty_percent}>
-                        <p>Please note, there is a 4-hour time difference between Kangerlussuaq and Copenhagen. Besides, this tour package doesn’t include Arctic Adventure guides. However, the local guide is included in optional activities for an adventurous journey.</p>
+                        <p>Please note, there is a 4-hour time difference between Kangerlussuaq and Copenhagen. Besides, this tour package doesn’t include Ripples Adventure guides. However, the local guide is included in optional activities for an adventurous journey.</p>
 
-                        <p>If you want to add an extra night in Copenhagen before and/or after your journey at Clarion Hotel, feel free to contact aatour@arctic-adventure.dk for a comfortable upgrade!</p>
+                        <p>If you want to add an extra night in Copenhagen before and/or after your journey at Clarion Hotel, feel free to contact aatour@Ripples-adventure.dk for a comfortable upgrade!</p>
 
                         <p>Tour Code: SFJ5CPH</p>
 
@@ -64,7 +64,7 @@ const TourDetails = () => {
             </div>
         </section>
 
-        <section className={styles.practical_information}>
+        {/* <section className={styles.practical_information}>
             <div className={styles.container}>
                 <h3 className={styles.primary_header}>Practical Information</h3>
                 <div className={styles.third_wrap}>
@@ -73,7 +73,7 @@ const TourDetails = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         <section className={styles.you_might_like}>
             <div className={styles.container}>

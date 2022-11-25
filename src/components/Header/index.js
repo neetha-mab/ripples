@@ -59,7 +59,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Logo width={202} height={33} />
+          <Logo width={202} height={45} />
         </div>
         <div className={`${styles.navigation} ${activeMobileMenu}`}>
           <ul className={styles.menu_links}>
@@ -79,7 +79,7 @@ const Header = () => {
               <Link href={'/'}>About us</Link>
               <ul className={styles.submenu}>
                 <li>
-                  <Link href={'/'}>About Arctic Adventure</Link>
+                  <Link href={'/'}>About Ripples Adventure</Link>
                 </li>
                 <li>
                   <Link href={'/'}>Blog</Link>
@@ -111,7 +111,7 @@ const Header = () => {
               </ul>
             </li>
           </ul>
-          <div className={`${styles.select_dropdown} ${languageActive}`}>
+          {/* <div className={`${styles.select_dropdown} ${languageActive}`}>
             <span id='language' onClick={(e) => langSelector(e)}>{selectedLang} <RiArrowDropDownLine /></span>
             <ul className={`${styles.submenu}` }>
               <li onClick={(e) => selectLang(e)}>简体中文</li>
@@ -128,7 +128,7 @@ const Header = () => {
               <li onClick={(e) => selectPrice(e)}>SEK</li>
               <li onClick={(e) => selectPrice(e)}>USD</li>
             </ul>
-          </div>
+          </div> */}
           <Link href={'#'} onClick={(e) => closeMenu(e)} className={styles.close_menu}><IoClose /></Link>
         </div>
         <Link href={'#'} onClick={(e) => hamMenu(e)} className={styles.ham_menu}><GiHamburgerMenu /></Link>

@@ -12,10 +12,10 @@ const TourTile = () => {
   return (
     <div className={styles.tile_block}>
         <Link href={'#'}>
-            <Image src={'/images/image.jpg'} alt={'image'} width={500} height={249} />
+            <Image src={'/images/image.jpeg'} alt={'image'} width={500} height={249} />
         </Link>
         <h3>ILULISSAT</h3>
-        <Link href={'#'}><h4>Fairy Tale of Two Cities in the Arctic (code: JIS7RKV)</h4></Link>
+        <Link href={'#'}><h4>Fairy Tale of Two Cities in the Ripples (code: JIS7RKV)</h4></Link>
         <ul>
             <li><MdCalendarViewMonth/> Jun - Aug</li>
             <li><HiCalendarDays /> 5 days</li>
