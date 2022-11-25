@@ -9,7 +9,7 @@ const Hero = () => {
         <Image src={'/images/hero.jpg'} alt={'hero'} width={2400} height={1000} />
         <div className={styles.hero_content}>
             <div className={styles.container}>
-                <h1>EXPLORE MANALI<br/>SINCE 1983</h1>
+                <h1>EXPLORE MANALI<br/>SINCE 1983 </h1>
                 <ul>
                     <li><Link href={'#'}>Moonar</Link></li>
                     <li><Link href={'#'}>Thekkadi</Link></li>
