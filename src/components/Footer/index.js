@@ -49,9 +49,9 @@ const Footer = () => {
       <div className={styles.foot_links}>
           <div className={styles.container}>
             <ul>
-              <li> ripplesholidays@gmail.com</li>
-              <li>+91 9847300034</li>
-              <li>+91 7736434405</li>
+              <li> <Link href={'mailto:ripplesholidays@gmail.com'}>ripplesholidays@gmail.com</Link></li>
+              <li><Link href={'tel:+91 9847300034'}>+91 9847300034</Link></li>
+              <li><Link href={'tel:+91 7736434405'}>+91 7736434405</Link></li>
               <li>Ripples Holidays, Neduvilamparambil, Karithala Lane, Manorama Jn,Ernakulam – 682016 Kerala – India</li>
             </ul>
             <Link href={'#'}><AiFillLock /> Agency Login</Link>

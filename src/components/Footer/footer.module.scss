@@ -212,10 +212,18 @@
                 position: absolute;
                 left: 0;
                 top: 14px;
+
+                @include media(767px){
+                    display: none;
+                }
             }
 
             &:first-child {
                 padding-left: 0;
+
+                @include media(767px){
+                    padding-left: 30px;
+                }
 
                 &::before {
                     display: none;

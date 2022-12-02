@@ -24,7 +24,7 @@ const Contact = () => {
                     Office Other Dept.:  <Link href={"tel:9037100505"}>9037100505</Link><br/>
                     ( Mon to Sat 10.00am to 5.00pm)<br/>
                     Email:  <Link href={"mailto:ripplesholidays@gmail.com"}>ripplesholidays@gmail.com</Link><br/>
-                    Website:  <Link href={"www.ripplesholidays.org"} target={'_blank'}>www.ripplesholidays.org</Link></p>
+                    Website:  <Link href={"https://www.ripplesholidays.org"} target={'_blank'}>www.ripplesholidays.org</Link></p>
 
 
 

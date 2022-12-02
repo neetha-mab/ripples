@@ -74,6 +74,10 @@
                 width: 168px;
             }
 
+            @include media(767px){
+                margin-left: 0;
+            }
+
             @include media(480px){
                 width: 100%;
             }

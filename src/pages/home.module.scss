@@ -5,6 +5,10 @@
     float: left;
     width: 100%;
 
+    @include media(767px){
+        padding: 40px 0 40px 0;
+    }
+
     h2 {
         color: $dark;
         font-family: "Gilroy Bold";

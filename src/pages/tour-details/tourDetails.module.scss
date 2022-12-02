@@ -5,6 +5,10 @@
     float: left;
     width: 100%;
 
+    @include media(767px){
+        padding-top: 40px;
+    }
+
     .two_blocks {
         display: flex;
         flex-wrap: wrap;
@@ -43,6 +47,10 @@
 
     @include media(992px){
         padding-bottom: 70px;
+    }
+
+    @include media(767px){
+        padding: 40px 0;
     }
 
     .container {
@@ -124,6 +132,10 @@
     float: left;
     width: 100%;
     padding: 100px 0;
+
+    @include media(767px){
+        padding: 40px 0 20px 0;
+    }
 
     .tours_tiles {
         display: flex;
